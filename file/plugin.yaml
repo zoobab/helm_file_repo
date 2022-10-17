@@ -1,7 +1,0 @@
-name: file
-version: 0.0.1
-description: supports file:// base repositories
-downloaders:
-  - command: "bin/file.sh"
-    protocols:
-      - "file"
