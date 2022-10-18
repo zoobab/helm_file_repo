@@ -1,6 +1,6 @@
 # Helm plugin for file://
 
-This plugin adds basic support for local repositories to helm.
+This plugin adds support for local repositories to helm with the file:/// instead of url.
 
 Example:
 ```
@@ -23,6 +23,25 @@ $ helm repo add cache file://$PWD/
 $ helm search repo chartexample
 NAME                    CHART VERSION   APP VERSION     DESCRIPTION
 cache/chartexample      0.1.0           1.16.0          A Helm chart for Kubernetes
+```
+
+The `index.yaml` should look like this, look at the `urls` field that does not contain `http`:
+
+```
+apiVersion: v1
+entries:
+  chartexample:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-18T12:20:54.858719098+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c262f7269459773bac53470649470b78b72a72bac6571b0931c8456c6bfc5ee1
+    name: chartexample
+    type: application
+    urls:
+    - chartexample-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-18T12:20:54.857888206+02:00"
 ```
 
 ## Links
