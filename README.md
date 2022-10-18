@@ -44,6 +44,13 @@ entries:
 generated: "2022-10-18T12:20:54.857888206+02:00"
 ```
 
+Test with helm version 3.10:
+
+```
+$ helm version
+version.BuildInfo{Version:"v3.10.1", GitCommit:"9f88ccb6aee40b9a0535fcc7efea6055e1ef72c9", GitTreeState:"clean", GoVersion:"go1.18.7"}
+```
+
 ## Links
 
 * https://medium.com/htc-research-engineering-blog/a-simple-example-for-helm-chart-fbb5c7208e94
