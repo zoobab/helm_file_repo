@@ -44,7 +44,7 @@ entries:
 generated: "2022-10-18T12:20:54.857888206+02:00"
 ```
 
-Test with helm version 3.10:
+Tested with helm version 3.10:
 
 ```
 $ helm version
