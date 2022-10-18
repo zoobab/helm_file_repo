@@ -4,10 +4,10 @@ This plugin adds support for local repositories to helm with the `file://` inste
 
 Example:
 ```
-$ git clone https://github.com/zoobab/helm_file_repo
-$ helm plugin add ./helm_file_repo
-# or $ helm plugin add https://github.com/zoobab/helm_file_repo
+$ helm plugin add https://github.com/zoobab/helm_file_repo
 Installed plugin: file
+# Alternatively, you could also add it locally with: 
+# $ git clone https://github.com/zoobab/helm_file_repo && helm plugin add ./helm_file_repo
 $ helm create chartexample
 Creating chartexample
 $ cd chartexample
