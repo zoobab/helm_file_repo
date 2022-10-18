@@ -1,6 +1,6 @@
 # Helm plugin for file://
 
-This plugin adds support for local repositories to helm with the file:/// instead of url.
+This plugin adds support for local repositories to helm with the `file://` instead of `http://` or `https://`.
 
 Example:
 ```
