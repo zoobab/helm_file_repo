@@ -6,6 +6,7 @@ Example:
 ```
 $ git clone https://github.com/zoobab/helm_file_repo
 $ helm plugin add ./helm_file_repo
+# or $ helm plugin add https://github.com/zoobab/helm_file_repo
 Installed plugin: file
 $ helm create chartexample
 Creating chartexample
