@@ -24,6 +24,17 @@ $ helm repo add cache file://$PWD/
 $ helm search repo chartexample
 NAME                    CHART VERSION   APP VERSION     DESCRIPTION
 cache/chartexample      0.1.0           1.16.0          A Helm chart for Kubernetes
+$ helm repo list
+NAME    URL
+cache   file:///home/zoobab/soft/helm_cache/
+```
+
+Not that the list of helm repositories starts with a `file:///`:
+
+```
+$ helm repo list
+NAME    URL
+cache   file:///home/zoobab/soft/helm_cache/
 ```
 
 The `index.yaml` should look like this, look at the `urls` field that does not contain `http`:
